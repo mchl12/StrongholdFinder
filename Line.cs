@@ -18,7 +18,7 @@ namespace StrongholdFinder
 
         public Line(double x, double z, double angle)
         {
-            _slope = Math.Tan(angle);
+            _slope = -1 / Math.Tan(angle);
             _intercept = z - _slope * x;
         }
     }
